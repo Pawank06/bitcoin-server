@@ -77,6 +77,7 @@ centralServer.on("blockchain", (blockchain) => {
 io.on("connection", (socket) => {
   let user = socket.id;
   console.log("Miner connected to miner server", socket.id);
+  socket.emit("user", user)
 
   // Send current blockchain to the newly connected miner
   socket.emit("blockchain", localBlockchain);
