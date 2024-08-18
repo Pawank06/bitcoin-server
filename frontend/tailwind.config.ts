@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+         'dotted': "radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px)"
+      },
+      backgroundSize: {
+        'dot-size': '20px 20px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
